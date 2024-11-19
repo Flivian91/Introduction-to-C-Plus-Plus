@@ -1,21 +1,17 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 int main(){
-    /*There two type of comments in C++
-    *Single-line comments
-    *Multi-line comment
-    
-    */
-    int age ;
-    age = 30; // this variable store the student age
-    cout << "Hello World" << endl;
-    cout << "Size of char : " << sizeof(char) << endl;
-    cout << "Size of int : " << sizeof(int) << endl;
-    cout << "Size of short int : " << sizeof(short int) << endl;
-    cout << "Size of long int : " << sizeof(long int) << endl;
-    cout << "Size of float : " << sizeof(float) << endl;
-    cout << "Size of double : " << sizeof(double) << endl;
-    cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
+    const double PI = 3.14;
+    double radius, area;
+    cout << "Enter The Radius of the Circle: \n";
+    cin >> radius;
+
+    // Area calculation
+    area = PI * radius * radius;
+    cout<< "The Area of Circle is: "<< area;
+
+
     return 0;
+
 } // namespace name
